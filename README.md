@@ -77,7 +77,7 @@ out all required field before calling build(). in The scoped-interface is in pac
 Person bruceWayne = RequiredFieldPersonBuilder.StepBuilder
         .begin()
         .firstName("Bruce") // After calling begin(), user has to fill in these three fields
-        .lastName("Wayne")  // before moving on other fields
+        .lastName("Wayne")  // before moving to other fields
         .age(41)
         .gender("male")
         .id("Dark Knight")
