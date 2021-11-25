@@ -137,3 +137,45 @@ Employee peggyCarter = new RecursiveGenericEmployeeBuilder("Peggy", "Carter")
                 .occupation("Special agent Director").worksAt("S.H.I.E.L.D").dailyWorkingHours(12)
                 .yearlySalary(100000).medicalCovered(true).build();
 ```
+
+### 1.2 Factory Pattern
+
+#### 1.2.1 Problem: Object Type Complicated
+
+Suppose many subclasses extending the same super class or implementing same interfaces, and their constructors are
+different, then they can confuse the user when creating their instances.
+
+#### 1.2.2 Factory Pattern  :link:[link](src/johnston/design_pattern/creation/factory/factory_pattern)
+Factory pattern packs the object creation operations inside the factory class, and provides interfaces for user to
+create objects they want. Factory pattern is a very common used pattern in software design, such as JUC Executor and
+Hibernate sessionFactory. My project thread-safe hash map also uses this pattern. 
+
+<b>Usage:</b> :link:[link](https://github.com/ZhianMai/Thread-safe-LinkedList-Hashmap)
+``` java
+// Example of creating hash map object using factory class.
+// Hash map for general use (no debugging methods)
+private MyHashMap<ClassA, ClassB> hashMap;
+private int capacity = 666; // Init hash map capacity
+private float loadFactor = 0.4f; // Init hash map load factor for rehashing
+
+// Create a MyHashMap object without thread-safety policy
+hashMap = MyHashMapFactory.getMyHashMap(ThreadSafePolicy.NoSync);
+
+// Create a MyHashMap object without thread-safety policy and given capacity and loadFactor
+hashMap = MyHashMapFactory.getMyHashMap(ThreadSafePolicy.NoSync, capacity, loadFactor);
+
+// Create a MyHashMap object with thread-safety using synchronized keyword
+hashMap = MyHashMapFactory.getMyHashMap(ThreadSafePolicy.SyncKeyword);
+
+// Createa MyHashMap object with thread-safety using ReentrantReadWriteLock
+hashMap = MyHashMapFactory.getMyHashMap(ThreadSafePolicy.ReadWriteLock);
+
+// Hash map for debugging (interface MyHashMapTesting)
+private MyHashMapTesting<ClassA, ClassB> hashMap;
+
+hashMap = MyHashMapFactory.MyHashMapTesting(ThreadSafePolicy.NoSync);
+hashMap = MyHashMapFactory.MyHashMapTesting(ThreadSafePolicy.NoSync, capacity, loadFactor);
+// Same usage as the MyHashMap above, but with different method names.
+```
+
+#### 1.2.3 Abstract Factory
