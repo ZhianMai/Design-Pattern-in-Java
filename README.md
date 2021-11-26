@@ -122,6 +122,8 @@ Employee clarkKent = new FluentEmployeeBuilder("Clark", "Kent").begin()
         .build();
 ```
 
+Step 1.1.3 and 1.1.4 can combine to make a builder that each category has some mandatory fields to fill in.
+
 #### 1.1.5 Recursive Generic Builder for Inheritance :link:[link](src/johnston/design_pattern/creation/builder/RecursiveGenericEmployeeBuilder.java)
 
 In general builder class is very big, and it would be great if it supports inheritance. The problem is the super class 
@@ -178,4 +180,21 @@ hashMap = MyHashMapFactory.MyHashMapTesting(ThreadSafePolicy.NoSync, capacity, l
 // Same usage as the MyHashMap above, but with different method names.
 ```
 
-#### 1.2.3 Abstract Factory
+#### 1.2.3 Abstract Factory  :link:[link](src/johnston/design_pattern/creation/factory/abstract_factory)
+If a group of classes which are very similar, then it can use an abstract factory to create their
+objects instead of directly calling the concrete constructors.
+
+This group of classes needs to implement a same interface or inheritance a same super class for
+abstract factory to provide a general interface.
+
+<b>Usage:</b>
+``` java
+Drink coffee = DrinkAbstractFactory.getDrink(DrinkList.COFFEE);
+coffee.drink();
+
+Drink tea = DrinkAbstractFactory.getDrink(DrinkList.TEA);
+tea.drink();
+
+Drink cocacola = DrinkAbstractFactory.getDrink(DrinkList.COCACOLA);
+cocacola.drink();
+```
