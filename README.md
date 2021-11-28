@@ -285,7 +285,7 @@ Util classes are very commons, such as java package Collections and Arrays. They
 In general, a singleton class is "locally stateful", while a util class is "globally stateless".
 
 ### 1.4 ProtoType
-Classes with Prototype pattern allow users to copy/clone their objects. However, the copy is (partially) either deep or
+Classes with Prototype pattern allow users to copy/clone their objects. However, the copy is either (partially) deep or
 shallow copy should be well considered.
 
 For deep copy, one needs to think about: how "deep" should be this deep copy be? Suppose I need to deep copy an object array,
