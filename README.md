@@ -198,3 +198,9 @@ tea.drink();
 Drink cocacola = DrinkAbstractFactory.getDrink(DrinkList.COCACOLA);
 cocacola.drink();
 ```
+
+### 1.3 Singleton Pattern
+
+#### 1.3.1 Basic Singleton with Eager Loading  :link:[link](src/johnston/design_pattern/creation/singleton/BasicEagerIdGenerator)
+
+
