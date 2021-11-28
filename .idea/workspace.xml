@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/EnumIdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/UnsafeLazyIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/UnsafeLazyIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/test/MaliciousCopyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/test/MaliciousCopyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/EnumIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/EnumIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/test/DataRacingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/test/DataRacingTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,20 +100,7 @@
       <recent name="johnston.design_pattern.creation.singleton" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MaliciousCopyTest">
-    <configuration name="BasicPersonBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.builder.BasicPersonBuilder" />
-      <module name="untitled104" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.creation.builder.base_entity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.DataRacingTest">
     <configuration name="DataRacingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.singleton.test.DataRacingTest" />
       <module name="untitled104" />
@@ -180,30 +166,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.singleton.test.Solution" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnston.design_pattern.creation.singleton.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.BasicPersonBuilder" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.DataRacingTest" />
       <item itemvalue="Application.MaliciousCopyTest" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MaliciousCopyTest" />
         <item itemvalue="Application.DataRacingTest" />
+        <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.MaliciousCopyTest" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
@@ -220,7 +222,8 @@
       <workItem from="1637876083189" duration="1487000" />
       <workItem from="1637914275219" duration="2554000" />
       <workItem from="1637980502705" duration="4390000" />
-      <workItem from="1638053934146" duration="8589000" />
+      <workItem from="1638053934146" duration="9282000" />
+      <workItem from="1638068244910" duration="8830000" />
     </task>
     <servers />
   </component>

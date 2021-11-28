@@ -64,12 +64,12 @@ Person tonyStark = new BasicPersonBuilder.Builder("Tony", "Stark")
 
 #### 1.1.3 Builder with Many Required Fields  :link:[link](src/johnston/design_pattern/creation/builder/RequiredFieldPersonBuilder.java)
 
-If the main class has many required field, and placing all required fields into the builder class constructor, then this
+Suppose the main class has many required field, and someone places all required fields into the builder class constructor, then this
 will recur the constructor parameter overwhelming problem.
 
-This can apply scoped interface in the builder class to guild the user to fill in the required
-field part by part. Once call begin(), the user has to follow the sequential methods to fill
-out all required field before calling build(). in The scoped-interface is in package
+This can apply scoped interface in the builder class to guide the user to fill in the required
+fields part by part. Once call begin(), the user has to follow the sequential methods to fill
+out all required fields before calling build(). The scoped-interface is in package
 "required_field_interface".
 
 <b>Usage:</b>
@@ -274,4 +274,23 @@ public final Object clone() throws CloneNotSupportedException {
 }
 ```
 
-1.3.6 Enum Singleton
+#### 1.3.6 Enum Singleton  :link:[link](src/johnston/design_pattern/creation/singleton/EnumIdGenerator.java)
+Use enum to implement singleton class is easy, thread-safe, and lazy loading. However, enum does not support inheritance.
+
+Putting multiple enum elements into an enum type is another design pattern called <i>multiton</i>.
+
+#### 1.3.7 Util Class
+A util class (monostate) has static methods only. It's always act as a singleton, no matter how many instances created.
+Util classes are very commons, such as java package Collections and Arrays. They are stateless and provide "utilities" methods.
+In general, a singleton class is "locally stateful", while a util class is "globally stateless".
+
+### 1.4 ProtoType
+Classes with Prototype pattern allow users to copy/clone their objects. However, the copy is (partially) either deep or
+shallow copy should be well considered.
+
+For deep copy, one needs to think about: how "deep" should be this deep copy be? Suppose I need to deep copy an object array,
+then I got tow options as:
+
+- New an object array, then copy all original object references to the new array;
+- New an object array, then for each original object I make a new one and let the new array points to them.
+

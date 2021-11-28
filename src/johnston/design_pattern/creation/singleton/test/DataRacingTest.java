@@ -1,5 +1,6 @@
 package johnston.design_pattern.creation.singleton.test;
 
+import johnston.design_pattern.creation.singleton.EnumIdGenerator;
 import johnston.design_pattern.creation.singleton.InnerStaticSafeIdGenerator;
 import johnston.design_pattern.creation.singleton.SafeLazyIdGenerator;
 import johnston.design_pattern.creation.singleton.UnsafeLazyIdGenerator;
@@ -25,7 +26,8 @@ public class DataRacingTest {
         
         // int id = SafeLazyIdGenerator.getInstance().getId();
         // int id = UnsafeLazyIdGenerator.getInstance().getId();
-        int id = InnerStaticSafeIdGenerator.getInstance().getId();
+        // int id = InnerStaticSafeIdGenerator.getInstance().getId();
+        int id = EnumIdGenerator.INSTANCE.getId();
         System.out.println(this.getName() + " got an id: " + id);
       }
     }

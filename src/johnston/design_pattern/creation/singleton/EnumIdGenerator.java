@@ -4,10 +4,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public enum EnumIdGenerator {
   INSTANCE;
+
   AtomicInteger currId = new AtomicInteger(0);
 
-  public int getInstance() {
+  public int getId() {
     return currId.getAndIncrement();
   }
-
 }
