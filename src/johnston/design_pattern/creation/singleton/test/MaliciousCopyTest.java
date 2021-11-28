@@ -8,8 +8,8 @@ import java.lang.reflect.InvocationTargetException;
 
 public class MaliciousCopyTest {
   public static void main(String[] args) throws InvocationTargetException, InstantiationException, IllegalAccessException {
-    useSeralize();
-    useReflection();
+    //useSeralize();
+    //useReflection();
   }
 
   private static void useSeralize() {

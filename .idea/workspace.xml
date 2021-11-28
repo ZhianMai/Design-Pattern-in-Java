@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/EnumIdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/InnerStaticSafeIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/InnerStaticSafeIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/UnsafeLazyIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/UnsafeLazyIdGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/test/MaliciousCopyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/singleton/test/MaliciousCopyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +220,7 @@
       <workItem from="1637876083189" duration="1487000" />
       <workItem from="1637914275219" duration="2554000" />
       <workItem from="1637980502705" duration="4390000" />
-      <workItem from="1638053934146" duration="5734000" />
+      <workItem from="1638053934146" duration="8589000" />
     </task>
     <servers />
   </component>

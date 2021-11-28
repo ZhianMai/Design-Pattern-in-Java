@@ -200,7 +200,78 @@ cocacola.drink();
 ```
 
 ### 1.3 Singleton Pattern
+Unlike builder and factory pattern, singleton pattern prevent user from creating multiple objects, and it provides a 
+global unique object all the time. It's like a global public variable.
 
-#### 1.3.1 Basic Singleton with Eager Loading  :link:[link](src/johnston/design_pattern/creation/singleton/BasicEagerIdGenerator)
+Singleton class can use for global variable, logger, thread pool, config, remote database connection, etc.
 
+Singleton has no scaling or extending ability, so use it with caution.
 
+The general singleton class includes:
+- private constructors;
+- a global object;
+- other strategies to ensure safety.
+
+#### 1.3.1 Basic Singleton with Eager Loading  :link:[link](src/johnston/design_pattern/creation/singleton/BasicEagerIdGenerator.java)
+singleton class can init when the class is loading. It's thread-safe.
+
+Problem: if the singleton class instance is never used, then it wastes resources. If multiple singleton classes from
+different places init at the same time, then it may create a hot spot, like many servers connecting to database on 
+startup.
+
+#### 1.3.2 Not Thread-safe Singleton with Lazy Loading  :link:[link](src/johnston/design_pattern/creation/singleton/UnsafeLazyIdGenerator.java)
+Singleton class with lazy init can avoid the problems occurred in eager init. However, this implementation is not thread-safe. See
+demo: :link:[link](src/johnston/design_pattern/creation/singleton/test/DataRacingTest.java)
+
+#### 1.3.3 Thread-safe Singleton with Lazy Loading   :link:[link](src/johnston/design_pattern/creation/singleton/SafeLazyIdGenerator.java)
+To ensure thread-safe, it needs a synchronized lock and double check to avoid data racing. Missing either of these two 
+requirements can compromise the thread-safety.
+
+#### 1.3.4 Thread-safe Inner Class Singleton with Lazy Loading  :link:[link](src/johnston/design_pattern/creation/singleton/InnerStaticSafeIdGenerator.java)
+An easier way to implement thread-safe lazy init singleton class is using static inner class.
+
+#### 1.3.5 Malicious Copy on Singleton  :link:[link](src/johnston/design_pattern/creation/singleton/test/MaliciousCopyTest.java)
+<b>Serializing</b>
+
+Using serializing-de-serializing can make a copy of singleton class.
+
+Solution: create method <i>readResolve()</i> to control the object serializing behavior that it returns the original singleton object.
+``` java
+protected Object readResolve() {
+    return Impl.GLOBAL_ID_GENERATOR;
+}
+```
+
+<b>Reflection</b>
+
+Use the powerful reflection tool can extract & call private constructors to create another singleton objects.
+
+Solution: the private constructor needs to check the global unique instance is null or not.
+``` java
+private InnerStaticSafeIdGenerator() {
+    /**
+     * Adding this check to avoid malicious reflection copying.
+     */
+    if (Impl.GLOBAL_ID_GENERATOR != null) {
+      throw new InstantiationError("Not allowed to created this object again!");
+    }
+    
+    System.out.println("\n***Singleton InnerStaticSafeIdGenerator init finished***\n");
+}
+```
+
+<b>Cloneable</b>
+
+If the singleton class implements Cloneable or its super class has implemented Cloneable, then using clone()
+may make another copy of it.
+
+Solution: override clone() method in either of two ways:
+``` java
+@Override
+public final Object clone() throws CloneNotSupportedException {
+  // throw new CloneNotSupportedException("Not allow to clone this singleton class");
+  return getInstance();
+}
+```
+
+1.3.6 Enum Singleton

@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class UnsafeLazyIdGenerator {
   private final AtomicInteger currId = new AtomicInteger(0);
-  private static UnsafeLazyIdGenerator GLOBAL_ID_GENERATOR;
+  private static UnsafeLazyIdGenerator GLOBAL_ID_GENERATOR = null;
 
   private UnsafeLazyIdGenerator() {
     System.out.println("\n***Singleton UnsafeLazyIdGenerator init finished***\n");
