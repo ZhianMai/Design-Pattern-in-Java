@@ -231,7 +231,8 @@ requirements can compromise the thread-safety.
 An easier way to implement thread-safe lazy init singleton class is using static inner class.
 
 #### 1.3.5 Malicious Copy on Singleton  :link:[link](src/johnston/design_pattern/creation/singleton/test/MaliciousCopyTest.java)
-<b>Serializing</b>
+
+<b><i>Serializing</i></b>
 
 Using serializing-de-serializing can make a copy of singleton class.
 
@@ -242,7 +243,7 @@ protected Object readResolve() {
 }
 ```
 
-<b>Reflection</b>
+<b><i>Reflection</i></b>
 
 Use the powerful reflection tool can extract & call private constructors to create another singleton objects.
 
@@ -260,7 +261,7 @@ private InnerStaticSafeIdGenerator() {
 }
 ```
 
-<b>Cloneable</b>
+<b><i>Cloneable</i></b>
 
 If the singleton class implements Cloneable or its super class has implemented Cloneable, then using clone()
 may make another copy of it.
@@ -284,13 +285,21 @@ A util class (monostate) has static methods only. It's always act as a singleton
 Util classes are very commons, such as java package Collections and Arrays. They are stateless and provide "utilities" methods.
 In general, a singleton class is "locally stateful", while a util class is "globally stateless".
 
-### 1.4 ProtoType
+### 1.4 ProtoType Pattern
 Classes with Prototype pattern allow users to copy/clone their objects. However, the copy is either (partially) deep or
 shallow copy should be well considered.
 
 For deep copy, one needs to think about: how "deep" should be this deep copy be? Suppose I need to deep copy an object array,
-then I got tow options as:
+then I got two options as:
 
 - New an object array, then copy all original object references to the new array;
 - New an object array, then for each original object I make a new one and let the new array points to them.
 
+So how "deep" of the deep copy should be? This problem should be well addressed when designing.
+
+## 2. Object Structures
+
+### 2.1 Adapter Pattern
+
+Electrical devices from all over the world have different rated voltage and different plugs, and a plug adapter can fit
+them into a specific outlet.

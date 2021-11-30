@@ -3,14 +3,14 @@ package johnston.design_pattern.creation.factory.abstract_factory;
 public class Main {
 
   public static void main(String[] args) {
-    Drink coffee = DrinkAbstractFactory.getDrink(DrinkList.COFFEE);
-    coffee.drink();
+    FakeDBConnection postgresConn = DrinkAbstractFactory.getDrink(DrinkList.POSTGRES);
+    postgresConn.about();
 
-    Drink tea = DrinkAbstractFactory.getDrink(DrinkList.TEA);
-    tea.drink();
+    FakeDBConnection mongodbConn = DrinkAbstractFactory.getDrink(DrinkList.MONGODB);
+    mongodbConn.about();
 
-    Drink cocacola = DrinkAbstractFactory.getDrink(DrinkList.COCACOLA);
-    cocacola.drink();
+    FakeDBConnection mysqlConn = DrinkAbstractFactory.getDrink(DrinkList.MYSQL);
+    mysqlConn.about();
   }
 
 }

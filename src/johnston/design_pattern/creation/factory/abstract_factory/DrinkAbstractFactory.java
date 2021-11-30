@@ -4,14 +4,14 @@ public class DrinkAbstractFactory {
   private DrinkAbstractFactory() {
   }
 
-  public static Drink getDrink(DrinkList drink) {
+  public static FakeDBConnection getDrink(DrinkList drink) {
     switch (drink) {
-      case TEA:
-        return new Tea();
-      case COFFEE:
-        return new Coffee();
-      case COCACOLA:
-        return new Cocacola();
+      case MYSQL:
+        return new MySQLConnection();
+      case POSTGRES:
+        return new PostgresSQL();
+      case MONGODB:
+        return new MongoDBConnection();
       default:
         return null;
     }

@@ -24,7 +24,8 @@ public class ScopedPersonCtor extends Person {
     this(firstName, lastName, age, id, address, null);
   }
 
-  public ScopedPersonCtor(String firstName, String lastName, int age, String id, String address, String occupation) {
+  public ScopedPersonCtor(String firstName, String lastName, int age, String id,
+                          String address, String occupation) {
     this(firstName, lastName, age, id, address, occupation, null);
   }
 

@@ -10,22 +10,25 @@ public class Main {
   public static void main(String[] args) {
     System.out.println("*** Basic Builder ***");
     System.out.println("Basic builder without optional fields: ");
+
     Person johnDoe = new BasicPersonBuilder.Builder("John", "Doe").build();
+
     System.out.println(johnDoe);
 
     System.out.println("\nBasic builder with all optional fields: ");
     // The order of parameter setters does not matter
     Person tonyStark = new BasicPersonBuilder.Builder("Tony", "Stark")
-        .age(40)
-        .gender("male")
         .address("10880 Malibu Point")
         .id("Unknown")
         .occupation("CEO")
+        .age(40)
+        .gender("male")
         .build();
     System.out.println(tonyStark);
 
     System.out.println("\n\n*** Required Field Builder ***");
     System.out.println("Required field builder without optional fields: ");
+
     Person janeDoe = RequiredFieldPersonBuilder.StepBuilder
         .begin()
         .firstName("Jane")

@@ -1,5 +1,5 @@
 package johnston.design_pattern.creation.factory.abstract_factory;
 
-public interface Drink {
-  public void drink();
+public interface FakeDBConnection {
+  public void about();
 }
