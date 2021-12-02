@@ -299,7 +299,9 @@ So how "deep" of the deep copy should be? This problem should be well addressed 
 
 ## 2. Object Structures
 
-### 2.1 Adapter Pattern
+### 2.1 Adapter Pattern :link:[link](src/johnston/design_pattern/structure/adapter)
 
 Electrical devices from all over the world have different rated voltage and different plugs, and a plug adapter can fit
 them into a specific outlet.
+
+Adapter pattern, also named wrapper class, can wrap an interface object so that it can fit into another interface.

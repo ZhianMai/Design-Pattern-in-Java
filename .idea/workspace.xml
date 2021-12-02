@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/prototype/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/adapter/ClassicLaptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/adapter/ClassicLaptopImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/adapter/ClassicToModernAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/adapter/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/adapter/ModernLaptop.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/builder/BasicPersonBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/builder/BasicPersonBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/builder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/builder/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/builder/ScopedPersonCtor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/builder/ScopedPersonCtor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/Cocacola.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/MongoDBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/Coffee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/PostgresSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/FakeDBConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/DrinkAbstractFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/DrinkAbstractFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/DrinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/DrinkList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/Tea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory/abstract_factory/MySQLConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -97,6 +91,8 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/johnston/design_pattern/creation/factory" />
@@ -109,13 +105,13 @@
       <recent name="johnston.design_pattern.creation.singleton" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="DataRacingTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.singleton.test.DataRacingTest" />
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.factory.abstract_factory.Main" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.creation.singleton.test.*" />
+          <option name="PATTERN" value="johnston.design_pattern.creation.factory.abstract_factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +119,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.factory.abstract_factory.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.structure.adapter.Main" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.creation.factory.abstract_factory.*" />
+          <option name="PATTERN" value="johnston.design_pattern.structure.adapter.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.prototype.Solution" />
+    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.builder.base_entity.Solution" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.creation.prototype.*" />
+          <option name="PATTERN" value="johnston.design_pattern.creation.builder.base_entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,12 +158,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.builder.base_entity.Solution" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.singleton.Solution" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.creation.builder.base_entity.*" />
+          <option name="PATTERN" value="johnston.design_pattern.creation.singleton.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,19 +183,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.DataRacingTest" />
-      <item itemvalue="Application.Solution (1)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Solution (2)" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Solution" />
+      <item itemvalue="Application.Main (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Solution (2)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Solution (1)" />
-        <item itemvalue="Application.DataRacingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +213,9 @@
       <workItem from="1637980502705" duration="4390000" />
       <workItem from="1638053934146" duration="9282000" />
       <workItem from="1638068244910" duration="15246000" />
-      <workItem from="1638143237077" duration="2678000" />
+      <workItem from="1638143237077" duration="3316000" />
+      <workItem from="1638327265496" duration="5587000" />
+      <workItem from="1638406562907" duration="4801000" />
     </task>
     <servers />
   </component>
