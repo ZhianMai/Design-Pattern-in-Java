@@ -325,3 +325,11 @@ To solve this problem, I can apply bridge pattern, which creates an abstract cla
 The implementation of abstract class takes in a Framework object and a Server object (dependency injection), and
 behaves like a concrete class which implements Framework and Server interfaces.
 
+### 2.3 Composite Pattern :link:[link](src/johnston/design_pattern/structure/composite)
+
+In this pattern, I created a class named <i>LearnedFrameworks</i>, which implements interface Framework. This class
+holds a list of framework, and when calling getFramework() method provided by Framework interface, it returns a list
+of learned framework. 
+
+So a composite class can hold a group of objects that behave the same, and it behaves like "all objects behave together".
+

@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/DjangoOnAws.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/DjangoOnGCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/DjangoOnHeroku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/FlaskOnAws.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/FlaskOnGCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/FlaskOnHeroku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/SpringOnAws.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/SpringOnGCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/bad_concrete_class/SpringOnHeroku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/deployment/Deployment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/deployment/MyFirstDeployment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/framework/Django.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/framework/Flask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/framework/Framework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/framework/Spring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/server/Aws.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/server/GCP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/server/Heroku.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/bridge/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/composite/LearnedFrameworks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/composite/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -124,7 +106,7 @@
       <recent name="johnston.design_pattern.creation.singleton" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.factory.abstract_factory.Main" />
       <module name="untitled104" />
@@ -164,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.creation.builder.base_entity.Solution" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.structure.composite.Main" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.creation.builder.base_entity.*" />
+          <option name="PATTERN" value="johnston.design_pattern.structure.composite.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,19 +184,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Solution (2)" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Solution" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Solution (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +216,7 @@
       <workItem from="1638068244910" duration="15246000" />
       <workItem from="1638143237077" duration="3316000" />
       <workItem from="1638327265496" duration="5587000" />
-      <workItem from="1638406562907" duration="9414000" />
+      <workItem from="1638406562907" duration="11350000" />
     </task>
     <servers />
   </component>
