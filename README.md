@@ -305,3 +305,23 @@ Electrical devices from all over the world have different rated voltage and diff
 them into a specific outlet.
 
 Adapter pattern, also named wrapper class, can wrap an interface object so that it can fit into another interface.
+
+### 2.2 Bridge Pattern :link:[link](src/johnston/design_pattern/structure/bridge)
+
+Suppose I have an interface named <i>Framework</i>, and its implementations are:
+ - Spring
+ - Django
+ - Flask. 
+    
+I also have an interface named <i>Server</i>, and its implementations are:
+ - Aws
+ - Gcp
+ - Heroku
+
+So if I need to implement a class <i>Deployment</i> that needs a Framework and a Server interface, then I can have
+up to 9 types of implementations. This is a "Cartesian product explosion".
+
+To solve this problem, I can apply bridge pattern, which creates an abstract class to decouple these two interfaces.
+The implementation of abstract class takes in a Framework object and a Server object (dependency injection), and
+behaves like a concrete class which implements Framework and Server interfaces.
+
