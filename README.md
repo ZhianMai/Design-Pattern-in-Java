@@ -359,3 +359,13 @@ System.out.println(safeIntegerCounter.incrementAndGet());
 
 I once used decorator pattern before learning it in the project "Multithreading in Java". I wrote several buffer classes
 with different policies, and they just wrapped the original buffer class.
+
+### Difference between Adapter and Decorator
+
+Both of these two patterns create wrapper class to enhance the previous type, but their purposes are different:
+
+ - adapter helps the original type to convert to another type;
+ - decorator helps the original type to add new functionality.
+
+It's fine for a wrapper class to be both patterns.
+
