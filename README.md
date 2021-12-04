@@ -369,3 +369,11 @@ Both of these two patterns create wrapper class to enhance the previous type, bu
 
 It's fine for a wrapper class to be both patterns.
 
+### 2.4 Facade Pattern :link:[link](https://github.com/ZhianMai/Multi-threading-in-Java/blob/main/src/johnston/thread/basic/properties/executors/ThreadPoolProperShutDown.java)
+
+Facade pattern is grouping a set of complicated objects or logic into a single class or method. Factory pattern is a
+kind of facade pattern.
+
+In this example, closing the JUC thread pool properly needs several steps. Instead of putting the logic into the 
+original method, extract it into a single method `threadPoolShutDown(ExecutorService threadPool)`.
+
