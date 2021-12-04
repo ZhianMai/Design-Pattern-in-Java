@@ -333,3 +333,29 @@ of learned framework.
 
 So a composite class can hold a group of objects that behave the same, and it behaves like "all objects behave together".
 
+### 2.3 Decorator Pattern :link:[link](src/johnston/design_pattern/structure/decorator)
+
+Suppose I need to add new functionality on an existing class, I can:
+
+ - modify the original class, but this would violate the "O" in SOLID principle: open for extension but closed for
+modification.
+ - create a subclass, but everytime when I need to add a new functionality, I need to inheritance again.
+ - Use decorator to make a wrapper class to enhance the original class functionality.
+
+In the package `decorator.basic_wrapper`, I created an integer class which can detect overflow by wrapping the int type.
+This decorator class is static.
+
+In the package `decorator.thread_safe_wrapper`, I created several counter classes which are not thread-safe, then created
+a wrapper class that can provide thread-safe functionality for all counter classes. This decorator class is dynamic.
+
+``` java
+// Not thread-safe counter
+Counter<Integer> integerCounter = new IntegerCounter();
+// Thread-safe decorator
+Counter<Integer> safeIntegerCounter = new ThreadSafeCounter<>(integerCounter);
+
+System.out.println(safeIntegerCounter.incrementAndGet());
+```
+
+I once used decorator pattern before learning it in the project "Multithreading in Java". I wrote several buffer classes
+with different policies, and they just wrapped the original buffer class.
