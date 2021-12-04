@@ -419,5 +419,24 @@ The proxy constructs in runtime instead of in compile time. The most famous exam
 programming</i> in Spring framework. It uses java reflection to dynamically wrap the target objects or methods
 defined by <i>pointcut</i>.
 
+## 3. Object Behavior
+
+### 3.1 Chain of Responsibility
+
+#### Serialized Chaining
+
+Suppose a JSON object from http request needs to write into the database. Then the backend performs:
+`validateJSON(Json j)` -> `unmarshal(Json j)` -> `convertFormat(String[] field)` -> `writeToDB(Object[] field)`
+
+This is serialized chaining.
+
+#### Parallel Chaining
+
+Suppose a JSON object from http request needs to write into the database, and there are multiple backend
+server are active. It acts like: if server[i] is idle, then take the request, otherwise pass to the server[i + 1]...
+until have an idle server to take the request.
+
+It's like the producer and consumer in the producer-consumer problems. :link:[link](https://github.com/ZhianMai/Multi-threading-in-Java/blob/main/src/johnston/thread/thread_safety_and_locking/consumer_producer/ExplicitLockConsumingProducing.java)
+
 
 

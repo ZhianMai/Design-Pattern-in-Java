@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/proxy/protective/Drinker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/proxy/protective/Liquor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/proxy/protective/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/proxy/protective/ProxyDrinkerAgeCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/johnston/design_pattern/structure/decorator/type_wrapper/thread_safe_wrapper/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/johnston/design_pattern/structure/decorator/type_wrapper/thread_safe_wrapper/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +214,7 @@
       <workItem from="1638068244910" duration="15246000" />
       <workItem from="1638143237077" duration="3316000" />
       <workItem from="1638327265496" duration="5587000" />
-      <workItem from="1638406562907" duration="25250000" />
+      <workItem from="1638406562907" duration="26076000" />
     </task>
     <servers />
   </component>
