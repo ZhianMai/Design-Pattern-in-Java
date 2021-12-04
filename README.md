@@ -333,7 +333,7 @@ of learned framework.
 
 So a composite class can hold a group of objects that behave the same, and it behaves like "all objects behave together".
 
-### 2.3 Decorator Pattern :link:[link](src/johnston/design_pattern/structure/decorator)
+### 2.4 Decorator Pattern :link:[link](src/johnston/design_pattern/structure/decorator)
 
 Suppose I need to add new functionality on an existing class, I can:
 
@@ -360,7 +360,7 @@ System.out.println(safeIntegerCounter.incrementAndGet());
 I once used decorator pattern before learning it in the project "Multithreading in Java". I wrote several buffer classes
 with different policies, and they just wrapped the original buffer class.
 
-### Difference between Adapter and Decorator
+#### Difference between Adapter and Decorator
 
 Both of these two patterns create wrapper class to enhance the previous type, but their purposes are different:
 
@@ -369,11 +369,55 @@ Both of these two patterns create wrapper class to enhance the previous type, bu
 
 It's fine for a wrapper class to be both patterns.
 
-### 2.4 Facade Pattern :link:[link](https://github.com/ZhianMai/Multi-threading-in-Java/blob/main/src/johnston/thread/basic/properties/executors/ThreadPoolProperShutDown.java)
+### 2.5 Facade Pattern :link:[link](https://github.com/ZhianMai/Multi-threading-in-Java/blob/main/src/johnston/thread/basic/properties/executors/ThreadPoolProperShutDown.java)
 
 Facade pattern is grouping a set of complicated objects or logic into a single class or method. Factory pattern is a
 kind of facade pattern.
 
 In this example, closing the JUC thread pool properly needs several steps. Instead of putting the logic into the 
 original method, extract it into a single method `threadPoolShutDown(ExecutorService threadPool)`.
+
+### 2.6 Flyweight Pattern
+
+This pattern is more like a programming concept: reuse object or apply shared variable if possible.
+
+A famous example is the boxed type `Boolean`.
+
+``` java
+public final class Boolean {
+    public static final Boolean TRUE = new Boolean(true);
+    public static final Boolean FALSE = new Boolean(false);
+    
+    // ....
+    
+     public static Boolean valueOf(boolean b) {
+        return (b ? TRUE : FALSE);
+    }
+}
+```
+
+The method `valueOf()` always return either one of two static final Boolean objects, instead of creating a new object.
+The String constant pool is also a great example of this pattern.
+
+### 2.7 Proxy Pattern
+
+Proxy pattern means make object A act like object B.
+
+#### Protective Proxy  :link:[link](src/johnston/design_pattern/structure/proxy/protective)
+
+Protective proxy is like decorator pattern that performs some checking work.
+
+#### Property Proxy
+
+Property proxy is letting a class internal filed refer to another type, like the bucket in `HashMap`. It
+can choose either linked list type or binary search tree type to implement the bucket instead of writing
+their own implementation.
+
+#### Dynamic Proxy
+
+The proxy constructs in runtime instead of in compile time. The most famous example is the <i>aspect-oriented
+programming</i> in Spring framework. It uses java reflection to dynamically wrap the target objects or methods
+defined by <i>pointcut</i>.
+
+
 

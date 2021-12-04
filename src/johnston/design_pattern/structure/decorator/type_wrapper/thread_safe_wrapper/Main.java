@@ -9,5 +9,7 @@ public class Main {
     Counter<Integer> safeIntegerCounter = new ThreadSafeCounter<>(integerCounter);
 
     System.out.println(safeIntegerCounter.incrementAndGet());
+
+    Boolean bool = new Boolean(true);
   }
 }
