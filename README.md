@@ -421,12 +421,12 @@ defined by <i>pointcut</i>.
 
 ## 3. Object Behavior
 
-### 3.1 Chain of Responsibility
+### 3.1 Chain of Responsibility Pattern
 
 #### Serialized Chaining
 
 Suppose a JSON object from http request needs to write into the database. Then the backend performs:
-`validateJSON(Json j)` -> `unmarshal(Json j)` -> `convertFormat(String[] field)` -> `writeToDB(Object[] field)`
+`validateJSON(Json j)` -> `unmarshal(Json j)` -> `convertFormat(String[] field)` -> `writ eToDB(Object[] field)`
 
 This is serialized chaining.
 
@@ -438,5 +438,9 @@ until have an idle server to take the request.
 
 It's like the producer and consumer in the producer-consumer problems. :link:[link](https://github.com/ZhianMai/Multi-threading-in-Java/blob/main/src/johnston/thread/thread_safety_and_locking/consumer_producer/ExplicitLockConsumingProducing.java)
 
+### 3.2 Command Pattern   :link:[link](src/johnston/design_pattern/behavior/command)
 
+The command pattern is a data-driven pattern that encapsulating request/execution as an object, then pass it to 
+the invoker/handler. It decouples the commands from its producer and consumer.
 
+Examples like async call-back task, event listeners are typical command pattern design.

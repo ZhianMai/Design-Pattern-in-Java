@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/OrderExecution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/Appliance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/DigitalProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/Grocery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/PurchaseOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -98,32 +103,20 @@
       <recent name="D:\Eclipse-Project\Design Pattern in Java\src\johnston\design_pattern\creation\factory" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="johnston.design_pattern.behavior.command.order" />
       <recent name="johnston.design_pattern.structure.bridge.bad_concrete_class" />
       <recent name="johnston.design_pattern.structure.bridge.server" />
       <recent name="johnston.design_pattern.structure.bridge.framework" />
       <recent name="johnston.design_pattern.creation.singleton" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (5)">
+  <component name="RunManager" selected="Application.OrderExecution">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.structure.decorator.type_wrapper.thread_safe_wrapper.Main" />
       <module name="untitled104" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="johnston.design_pattern.structure.decorator.type_wrapper.thread_safe_wrapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.structure.bridge.Main" />
-      <module name="untitled104" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.structure.bridge.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,6 +163,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrderExecution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.behavior.command.OrderExecution" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnston.design_pattern.behavior.command.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -182,19 +188,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (4)" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (5)" />
+      <item itemvalue="Application.OrderExecution" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrderExecution" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +220,9 @@
       <workItem from="1638068244910" duration="15246000" />
       <workItem from="1638143237077" duration="3316000" />
       <workItem from="1638327265496" duration="5587000" />
-      <workItem from="1638406562907" duration="26076000" />
+      <workItem from="1638406562907" duration="27845000" />
+      <workItem from="1638659242649" duration="4902000" />
+      <workItem from="1638690209408" duration="459000" />
     </task>
     <servers />
   </component>
