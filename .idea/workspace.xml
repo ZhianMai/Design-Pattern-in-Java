@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/OrderExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/Appliance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/DigitalProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/Grocery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/command/order/PurchaseOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -222,7 +217,7 @@
       <workItem from="1638327265496" duration="5587000" />
       <workItem from="1638406562907" duration="27845000" />
       <workItem from="1638659242649" duration="4902000" />
-      <workItem from="1638690209408" duration="459000" />
+      <workItem from="1638690209408" duration="1818000" />
     </task>
     <servers />
   </component>

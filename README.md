@@ -444,3 +444,13 @@ The command pattern is a data-driven pattern that encapsulating request/executio
 the invoker/handler. It decouples the commands from its producer and consumer.
 
 Examples like async call-back task, event listeners are typical command pattern design.
+
+
+### 3.3 Interpreter Pattern
+
+Examples of interpreter are: compiler, serialization/deserialization, marshall/unmarshall, regular expression
+interpretation, etc.
+
+Solving "String" problems in leetcode are examples of implementation of this pattern.
+
+
