@@ -469,4 +469,11 @@ getting complicated. So use an object to be a mediator for their communication.
 
 Example: in a public chat room, every user should not keep a list of all other online users.
 
+### 3.6 Memento Pattern (Token)  :link:[link](src/johnston/design_pattern/behavior/memento)
 
+This pattern allows restoring an object to its previous state, line "undo". A memento object can
+capture and save its target object's internal state, and return the snapshot when required.
+
+### 3.7 Null Object Pattern
+
+Null object pattern is like 
