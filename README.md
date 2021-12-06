@@ -476,4 +476,10 @@ capture and save its target object's internal state, and return the snapshot whe
 
 ### 3.7 Null Object Pattern
 
-Null object pattern is like 
+Null object pattern is like create a placeholder object for null, like a null node in binary tree.
+The null placeholder object contains specific property that makes it act like null, such as size 0,
+height 0, val 0, etc.
+
+Using the null object pattern can avoid extra check `if (obj == null)`.
+
+An excellent example: dummy head in linked list.
