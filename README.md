@@ -453,4 +453,20 @@ interpretation, etc.
 
 Solving "String" problems in leetcode are examples of implementation of this pattern.
 
+### 3.4 Iterator Pattern  :link:[link](https://github.com/ZhianMai/Thread-safe-LinkedList-Hashmap/tree/main/src/main/java/johnston)
+
+Data structure with this pattern provides functionality that traverse every element it has. Java provides `Iterable<T>`
+and `Iterator<T>` to support this pattern.
+
+See my implementation of linked list and hash map which implemented `Iterable<T>`.
+
+### 3.5 Mediator Pattern   :link:[link](src/johnston/design_pattern/behavior/mediator)
+
+
+This pattern defines an object encapsulating the interaction of a set of objects. As more and more
+functionality adding to the project, more classes are created. The communication between them is 
+getting complicated. So use an object to be a mediator for their communication.
+
+Example: in a public chat room, every user should not keep a list of all other online users.
+
 
