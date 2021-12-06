@@ -482,4 +482,17 @@ height 0, val 0, etc.
 
 Using the null object pattern can avoid extra check `if (obj == null)`.
 
-An excellent example: dummy head in linked list.
+An excellent example: <i>dummy head</i> in linked list.
+
+### 3.7 Observer Pattern  :link:[link](src/johnston/design_pattern/behavior/observer)
+
+Suppose objects A dependent on other objects B, and A listen to B's event. When B have made
+some changes, A need to update their states.
+
+Observer objects maintain the dependencies of A, and will notify A if any of their dependencies have
+changed.
+
+The example is news feed: users subscribe publishers, and publishers push news to users. If users
+unsubscribe publishers, then they should not receive any news from them.
+
+
