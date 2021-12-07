@@ -495,4 +495,8 @@ changed.
 The example is news feed: users subscribe publishers, and publishers push news to users. If users
 unsubscribe publishers, then they should not receive any news from them.
 
+Problem: the dependency management is difficult to scale.
 
+### 3.7 State Pattern   :link:[link](src/johnston/design_pattern/behavior/state)
+
+State pattern is like finite state machine, the object of which behaves depending on its internal state.
