@@ -500,3 +500,40 @@ Problem: the dependency management is difficult to scale.
 ### 3.7 State Pattern   :link:[link](src/johnston/design_pattern/behavior/state)
 
 State pattern is like finite state machine, the object of which behaves depending on its internal state.
+
+### 3.8 Strategy Pattern  
+
+Strategy pattern allows an object to decide its behavior in runtime. In other words, it's "favor interface
+over class".
+
+``` java
+// Good
+List<Integer> myBuffer = new LinkedList<>();
+List<Integer> myList =  new ArrayList<>();
+
+// Better not to do this:
+LinkedList<Integer> myBuffer = new LinkedList<>();
+ArrayList<Integer> myList =  new ArrayList<>();
+```
+
+### 3.8 Template Pattern  
+
+Template pattern is to create a superclass as a template, then let subclasses implement it differently. This
+pattern is similar to the strategy pattern.
+
+While using inheritance in Java, implementations should be well considered. <i>Efficient Java</i> does not 
+recommend use inheritance all the time, since it may hamper encapsulation. Suppose a subclass does not 
+override the superclass method A, and one day the superclass changed the implementation of method A, then
+the subclass's behavior also changes without notice.
+
+### 3.8 Visitor Pattern   :link:[link](src/johnston/design_pattern/behavior/visitor)
+
+Suppose a group of classes which have hierarchical structure, and they need to change some implementations. If
+all implementations are hard-coded, then developers need to change them one-by-one. Applying visitor pattern 
+can avoid this disaster.
+
+For alternate implementations, like output handling, it can place them to a visitor class, and implement the
+alternate logic inside the visitor class. The visitor class acts like an interface. So when the logic needs to
+alter, just modify the visitor class instead of all classes.
+
+However, the visitor class highly couples the target classes.

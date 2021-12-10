@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fceb683c-d649-4f4e-9940-3a4ec0fc43f5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/state/LightBulb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/state/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/visitor/MyOutputVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/visitor/MyOutputVisitorImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/johnston/design_pattern/behavior/visitor/concrete_class_group/TrickyOutputClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -107,7 +108,7 @@
       <recent name="johnston.design_pattern.creation.singleton" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (4)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.behavior.state.Main" />
       <module name="untitled104" />
@@ -147,6 +148,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.behavior.visitor.concrete_class_group.Main" />
+      <module name="untitled104" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="johnston.design_pattern.behavior.visitor.concrete_class_group.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.behavior.memento.Main" />
       <module name="untitled104" />
@@ -160,46 +174,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderExecution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="johnston.design_pattern.behavior.command.OrderExecution" />
-      <module name="untitled104" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="johnston.design_pattern.behavior.command.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.OrderExecution" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main (4)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.OrderExecution" />
       </list>
     </recent_temporary>
   </component>
@@ -222,7 +221,8 @@
       <workItem from="1638406562907" duration="27845000" />
       <workItem from="1638659242649" duration="4902000" />
       <workItem from="1638690209408" duration="2770000" />
-      <workItem from="1638761217282" duration="14833000" />
+      <workItem from="1638761217282" duration="16111000" />
+      <workItem from="1639117542096" duration="3928000" />
     </task>
     <servers />
   </component>
