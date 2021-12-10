@@ -189,14 +189,14 @@ abstract factory to provide a general interface.
 
 <b>Usage:</b>
 ``` java
-Drink coffee = DrinkAbstractFactory.getDrink(DrinkList.COFFEE);
-coffee.drink();
+FakeDBConnection postgresConn = DrinkAbstractFactory.getDrink(DrinkList.POSTGRES);
+postgresConn.about();
 
-Drink tea = DrinkAbstractFactory.getDrink(DrinkList.TEA);
-tea.drink();
+FakeDBConnection mongodbConn = DrinkAbstractFactory.getDrink(DrinkList.MONGODB);
+mongodbConn.about();
 
-Drink cocacola = DrinkAbstractFactory.getDrink(DrinkList.COCACOLA);
-cocacola.drink();
+FakeDBConnection mysqlConn = DrinkAbstractFactory.getDrink(DrinkList.MYSQL);
+mysqlConn.about();
 ```
 
 ### 1.3 Singleton Pattern
