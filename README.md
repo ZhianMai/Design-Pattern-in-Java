@@ -8,7 +8,7 @@ In the history of software engineering especially in OOD, people have found many
 such as poor re-usability and flexibility, difficult scaling, etc. Software design pattern is a
 general, reusable solution to those commonly occurring problems in software design. Design pattern
 is like algorithm, which is independent to programming language. However, some patterns may only apply
-to OOD languages, and they may not work in some functional programming languages like Haskell.
+to OOD languages, and they may not work in some functional programming languages like Python and Haskell.
 
 ## Types of Design Pattern
 
